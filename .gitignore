@@ -1,0 +1,103 @@
+# AIQueue specific files and directories
+#
+# Ignore build and output directories
+/build/
+/target/
+/out/
+/bin/
+
+# Ignore project-specific environment and configuration files
+.env
+.secrets/
+windmill.yml
+
+# --- Programming Language and Frameworks ---
+
+# Java / Kotlin (JVM)
+# Compiled class files
+*.class
+
+# Maven
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+/build/
+!/gradle/wrapper/gradle-wrapper.jar
+.apt_generated/
+
+# Intellij IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+*.swp
+out/
+
+# Eclipse IDE
+.project
+.classpath
+.settings/
+*.launch
+.metadata
+
+# VS Code
+.vscode/
+
+# --- Operating System and IDE Files ---
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.#*
+*.swp
+*.bak
+*.orig
+
+# --- Memory and Database files ---
+
+# Vector databases
+# Assuming local database instances for development
+/pinecone-data/
+/chroma-data/
+/weaviate-data/
+
+# Relational databases
+# PostgreSQL files for local development
+*.sql
+*.log
+
+# --- Python Dependencies (for Windmill automations) ---
+
+# Python virtual environment
+.venv/
+venv/
+env/
+/lib/python*/site-packages/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+
+# --- Ngrok and other tools ---
+
+# Ignore ngrok executable
+/ngrok
+ngrok.log

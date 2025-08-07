@@ -1,0 +1,24 @@
+execution_engine: asyncio
+logger:
+  transports: [console]
+  level: info
+  path: "logs/lyra-optimizer.jsonl"
+
+# LYRA doesn't require external MCP servers for core optimization
+# but you can add them if needed for specific use cases
+mcp:
+  servers: {}
+
+# LLM Configuration
+openai:
+  default_model: gpt-4o
+  
+anthropic:
+  default_model: claude-3-5-sonnet-20241022
+
+# LYRA-specific settings
+lyra:
+  default_platform: chatgpt
+  default_mode: basic
+  enable_batch_processing: true
+  max_clarifying_questions: 3
